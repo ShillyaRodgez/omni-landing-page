@@ -853,14 +853,22 @@ section[id] {
 
 .tech-stack {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
+}
+
+.tech-category {
+    background: #ffffff;
+    border: 1px solid #d9e0e8;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
 }
 
 .tech-category h3 {
     font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
     color: var(--text-primary);
 }
 
@@ -871,14 +879,14 @@ section[id] {
 }
 
 .tech-item {
-    background: white;
+    background: #f3f5f7;
     padding: 1rem 0.8rem;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--border-color);
+    box-shadow: none;
+    border: 1px solid #d9e0e8;
     transition: var(--transition);
 }
 
@@ -897,6 +905,12 @@ section[id] {
     color: var(--text-primary);
     font-size: 0.95rem;
     white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+    .tech-stack {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 /* Vantagem Section */
@@ -1371,6 +1385,10 @@ section[id] {
     .strategy-cta-text {
         font-size: 1.2rem;
         max-width: none;
+    }
+
+    .tech-stack {
+        grid-template-columns: 1fr;
     }
 
     .tech-items {
