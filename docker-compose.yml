@@ -1,0 +1,17 @@
+services:
+  landing-page:
+    build: .
+    container_name: omni-data-landing
+    ports:
+      - "8080:80"
+    develop:
+      watch:
+        - action: rebuild
+          path: ./index.html
+        - action: rebuild
+          path: ./styles.css
+        - action: rebuild
+          path: ./script.js
+        - action: rebuild
+          path: ./Dockerfile
+    restart: unless-stopped
