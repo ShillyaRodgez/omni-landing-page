@@ -70,15 +70,13 @@ section[id] {
 .nav-brand .logo {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
     text-decoration: none;
 }
 
-.nav-brand .logo i {
-    margin-right: 0.5rem;
-    font-size: 1.8rem;
+.nav-brand .logo img {
+    display: block;
+    height: 42px;
+    width: auto;
 }
 
 .nav-menu {
@@ -749,6 +747,13 @@ section[id] {
     color: var(--primary-color);
 }
 
+.diagram-node img {
+    display: block;
+    height: 38px;
+    width: auto;
+    margin: 0 auto 0.75rem;
+}
+
 .diagram-node span {
     display: block;
     font-weight: 600;
@@ -1201,14 +1206,13 @@ section[id] {
 .footer-brand .logo {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.footer-brand .logo i {
-    margin-right: 0.5rem;
-    color: var(--primary-color);
+.footer-brand .logo img {
+    display: block;
+    height: 48px;
+    width: auto;
 }
 
 .footer-brand p {
