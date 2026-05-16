@@ -10,6 +10,7 @@ RUN sed -i 's/sendfile on;/sendfile off;/' /etc/nginx/nginx.conf \
 COPY index.html /usr/share/nginx/html/index.html
 COPY styles.css /usr/share/nginx/html/styles.css
 COPY script.js /usr/share/nginx/html/script.js
+COPY *.png /usr/share/nginx/html/
 
 # Expõe a porta padrão do Nginx
 EXPOSE 80

@@ -13,5 +13,9 @@ services:
         - action: rebuild
           path: ./script.js
         - action: rebuild
+          path: ./favicon.png
+        - action: rebuild
+          path: ./omnii.png
+        - action: rebuild
           path: ./Dockerfile
     restart: unless-stopped
